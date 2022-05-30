@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
-    },
+  },
   "keywords": [
     "webpack",
     "automatisation"
@@ -17,5 +17,8 @@
   "devDependencies": {
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0"
   }
 }
