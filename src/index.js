@@ -1,1 +1,0 @@
-console.log("welcome script:","Hello, Webpack!");
