@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
+//const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     //override de la proprieté par défaut (index.js) => app.js
     entry: {
@@ -8,12 +9,16 @@ module.exports = {
         //override de la proprieté par défaut (dist) => deploy
         output: {
             filename: '[name].bundle.js',
-            path: path.resolve(__dirname, 'deploy')
+            path: path.resolve(__dirname, 'deploy'),
+
+
             },
+
     plugins: [
         new HtmlWebpackPlugin(
             {title: "Webpack demo"}
         ),
+      //  new CleanWebpackPlugin()
     ],
     module: {
         rules: [

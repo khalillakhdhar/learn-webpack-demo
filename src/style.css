@@ -1,4 +1,9 @@
 h1
 {
-    color: red;
+    color: cornflowerblue;
+}
+p
+{
+    text-align:left;
+    size: 16px;
 }
